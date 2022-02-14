@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Horoscopo
+    </ion-title>
+    <ion-back-button slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--ngIf espera a que los datos de data esten listos antes de cargar la pagina, evita errores visuales-->
+  <div *ngIf="data" class="contenedor">
+    <h5>{{data.nombre}}</h5>
+    <h6>{{data.fechaSigno}}</h6>
+    <h6>Color: {{data.color}} Numero: {{data.numero}}</h6>
+    <div class="titulo">Amor</div>
+    <p>{{data.amor}}</p>
+    <div class="titulo">Dinero</div>
+    <p>{{data.dinero}}</p>
+    <div class="titulo">Salud</div>
+    <p>{{data.salud}}</p>
+  </div>
+</ion-content>

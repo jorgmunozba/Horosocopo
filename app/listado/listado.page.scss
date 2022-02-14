@@ -1,0 +1,30 @@
+*{
+
+    margin:0;
+    padding:0;
+    color:#fff;
+}
+
+.contenedor{
+    background:linear-gradient(rgb(126,0,115),rgb(52,0,95));
+    height: 100%;
+}
+
+img{
+    width: 40px;
+    height: auto;
+}
+
+ion-row{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h3{
+    text-align:center;
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+
+
+img:hover { transform: scale(1.3) } 
